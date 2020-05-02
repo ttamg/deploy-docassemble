@@ -1,0 +1,15 @@
+# A simple development setup for running docassemble on localhost
+version: "3"
+services:
+  docassemble:
+    image: jhpyle/docassemble
+    container_name: docassemble-dev
+    env_file:
+      - .env
+    restart: unless-stopped
+    stop_grace_period: 6m
+    ports:
+      - "80:80"
+      # - "443:443"
+    volumes:
+      - ./volumes/backup:/usr/share/docassemble/backup
