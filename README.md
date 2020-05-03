@@ -38,9 +38,9 @@ But if you prefer **docker-compose** then this repo may be a helpful timesaver.
 
 Each template configuration is held in a separate sub-directory.
 
-1.  **Development setup** - this spins up a simple development server version of **docassemble** in the same way as outlined in the documentation, but using **docker-compose**
+- [**Development setup**](https://github.com/ttamg/deploy-docassemble/tree/master/development-setup) - this spins up a simple development server version of **docassemble** in the same way as outlined in the documentation, but using **docker-compose**.
 
-    - [See `development-setup` folder](https://github.com/ttamg/deploy-docassemble/tree/master/development-setup).
+- [**Simple production setup**](https://github.com/ttamg/deploy-docassemble/tree/master/simple-production-setup) - this creates a single server deployment setup, using LetsEncrypt for SSL, and stores the backup data in volumes on the server itself.
 
 ## Contributing
 
