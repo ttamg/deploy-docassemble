@@ -1,4 +1,3 @@
-# A single server setup
 version: "3"
 services:
   docassemble:
