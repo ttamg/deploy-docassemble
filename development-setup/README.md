@@ -1,29 +1,31 @@
 # Development setup
 
-This provides a simple setup for developers on a local machine.
+A simple **docassemble** set up on your local development machine for trial and development processes.
 
-This provides an an alternative to the `docker run` instructions provided in the full **docassemble** documentation.
+The app runs on http://localhost or http://127.0.0.1 port 80.
 
-Note that the `.env` file contains the full container options so that developers to play around with these features locally before deploying remotely.
+This setup is _not suitable for deployment_ as it does not use SSL.
 
 ## Volumes
 
-This setup creates a backup volume that will be placed in the local `volumes` subdirectory. Backup data will persist between sessions. The backup also contains the log files which are useful for debugging.
+This setup creates a backup volume that will be placed in the local `volumes` subdirectory. Backup data will persist between sessions.
 
 ## Getting started
 
-From this directory, run:
+1.  Copy across the `.env` and `docker-compose.yml` file.
 
-    docker-compose up -d
+2.  Run using:
 
-It takes up to 10 minutes to spawn all the processes first time around. You can try the command without the `-d` tag to see the progress.
+        docker-compose up
 
-Once complete, **docassemble** app will be available on http://localhost:80 or http://127.0.0.1:80
+3.  After around 10 mins of initial setup time, the app will be available on http://localhost or http://127.0.0.1 port 80.
 
-Bring the container down using **Ctrl-C** or `docker-compose down`
+4.  Bring the container down using **Ctrl-C** or:
 
-## Issues
+        docker-compose down
 
-Note that it takes up to 10 minutes first time round to spawn all the processes. Make a cup of tea.
+## Notes
 
-Got other issues? Try the [docassemble Docker documentation](https://docassemble.org/docs/docker.html)
+- This setup achieves the same outcome as the simple `docker run` instructions provided in the [official documentation](https://docassemble.org/docs/docker.html#starting), but does so using `docker-compose` instead.
+
+- The `.env` file contains many more container options than are needed for development. They are included here so that developers can play around with these features locally before deploying remotely. But to get started you can ignore these.
