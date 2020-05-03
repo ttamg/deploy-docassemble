@@ -4,11 +4,9 @@ A simple **docassemble** set up on your local development machine for trial and 
 
 The app runs on http://localhost or http://127.0.0.1 on port 80.
 
-This setup is _not suitable for deployment_ as it does not use SSL.
-
-## Volumes
-
 This setup creates a backup volume that will be placed in the local `volumes` subdirectory. Backup data will persist between sessions.
+
+This setup is _not suitable for deployment_ as it does not use SSL.
 
 ## Getting started
 
