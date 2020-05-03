@@ -53,7 +53,7 @@ If this repo is useful, we are also happy to receive **other useful template con
 Check out the official documentation for this fantastic package:
 
 - **docassemble** GitHub repo: https://github.com/jhpyle/docassemble
-- Documentation for **docassemble**: https://docassemble.org/
+- **docassemble** full documentation: https://docassemble.org/
 
 ## Questions
 
