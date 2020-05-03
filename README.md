@@ -40,7 +40,9 @@ Each template configuration is held in a separate sub-directory.
 
 - [**Development setup**](https://github.com/ttamg/deploy-docassemble/tree/master/development-setup) - this spins up a simple development server version of **docassemble** in the same way as outlined in the documentation, but using **docker-compose**.
 
-- [**Simple production setup**](https://github.com/ttamg/deploy-docassemble/tree/master/simple-production-setup) - this creates a single server deployment setup, using LetsEncrypt for SSL, and stores the backup data in volumes on the server itself.
+- [**Simple production setup**](https://github.com/ttamg/deploy-docassemble/tree/master/simple-production-setup) - this creates a single server deployment setup, using LetsEncrypt for SSL. By default it stores the backup and configuration data in a persistent volume on the server itself. It also contains instructions on how to easily attach to S3 or Azure Blob storage.
+
+- [**DigitalOcean setup**](https://github.com/ttamg/deploy-docassemble/tree/master/digitalocean-setup) - this creates a single server deployment setup on DigitalOcean using LetsEncrypt for SSL. It also uses a DigitalOcean Spaces 'bucket' for S3 storage to persist the backup and configuration.
 
 ## Contributing
 

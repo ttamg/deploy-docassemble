@@ -1,0 +1,18 @@
+version: "3"
+services:
+  docassemble:
+    image: jhpyle/docassemble:latest
+    container_name: docassemble-prod
+    env_file:
+      - .env
+    restart: always
+    stop_grace_period: 6m
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - dabackup:/usr/share/docassemble/backup
+
+volumes:
+  dabackup:
+    driver: local
