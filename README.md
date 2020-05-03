@@ -34,7 +34,7 @@ But if you prefer **docker-compose** then this repo may be a helpful timesaver.
 
         docker-compose down
 
-## Configurations to choose from
+## Configuration templates
 
 Each template configuration is held in a separate sub-directory.
 
