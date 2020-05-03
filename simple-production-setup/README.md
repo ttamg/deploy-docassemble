@@ -4,7 +4,7 @@ This provides a simple setup for deployment on a single server, probably a cloud
 
 By default, this setup will store the backups and configuation files in a persistent storage volume on the local server.
 
-See the additional steps below if you also want to connect the backups and configuration to your AWS S3, DigitalOcean Spaces, or Azure Blob storage.
+See the additional steps below if you also want to connect the backups and configuration to your AWS S3 storage.
 
 The app is secured using LetsEncrypt SSL certificates.
 
